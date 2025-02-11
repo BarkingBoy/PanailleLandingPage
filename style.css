@@ -1,3 +1,49 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/LeagueGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/LeagueGothic-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/LeagueGothic-Condensed.woff2') format('woff2');
+    font-weight: 600;
+    /* On met une valeur plus élevée pour le différencier */
+    font-stretch: condensed;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/LeagueGothic-CondensedItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-stretch: condensed;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('/assets/fonts/AlbertSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    /* Gestion du poids variable */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('/assets/fonts/AlbertSans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
  .work-sans {
      font-family: 'Work Sans', sans-serif;
  }
@@ -48,4 +94,14 @@
  #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
      color: #000;
      /*Set to match the Tailwind colour you want the active one to be */
+ }
+
+ .leaguegothic-bold {
+     font-family: 'League Gothic', sans-serif;
+     font-weight: 700;
+     /* Version bold */
+ }
+
+ .albert-sans {
+     font-family: 'Albert Sans', sans-serif;
  }
