@@ -1,138 +1,187 @@
 /* Polices */
 @font-face {
-    font-family: 'League Gothic';
-    src: url('/assets/fonts/LeagueGothic-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "League Gothic";
+  src: url("/assets/fonts/LeagueGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Albert Sans';
-    src: url('/assets/fonts/AlbertSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
+  font-family: "Albert Sans";
+  src: url("/assets/fonts/AlbertSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
 :root {
-    /* Palette de couleurs inspirée de leur Instagram */
-    --primary-color: #2C2C2C;
-    /* Noir profond pour les textes principaux */
-    --secondary-color: #4A4A4A;
-    /* Gris foncé pour les textes secondaires */
-    --accent-color: #8B7355;
-    /* Marron/beige pour les accents, inspiré de leurs photos */
-    --light-bg: #F5F5F5;
-    /* Fond clair */
-    --white: #FFFFFF;
-    /* Blanc pur */
+  --primary-color: #000000;
+  /* Noir du logo */
+  --secondary-color: #333333;
+  /* Version légèrement plus douce du noir */
+  --accent-color: #f3ed95;
+  /* Version adoucie du jaune */
+  --hover-color: #e8e27a;
+  /* Version encore plus douce pour les interactions */
+  --light-bg: #fdfdf7;
+  /* Fond très légèrement teinté */
+  --white: #ffffff;
 }
 
 /* Style général */
 body {
-    font-family: 'Albert Sans', sans-serif;
-    color: var(--primary-color);
-    line-height: 1.6;
+  font-family: "Albert Sans", sans-serif;
+  color: var(--primary-color);
+  line-height: 1.6;
 }
 
 /* En-tête et navigation */
 .nav-link {
-    font-family: 'Albert Sans', sans-serif;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
+/* Liens de navigation */
 .nav-link:hover {
-    color: var(--accent-color);
+  color: var(--hover-color);
 }
-
 /* Titres */
 h1,
 h2,
 h3,
 .title {
-    font-family: 'League Gothic', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  font-family: "League Gothic", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .brand-title {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    color: var(--primary-color);
+  font-family: "League Gothic", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  color: var(--primary-color);
 }
 
 /* Texte du corps */
 .body-text {
-    font-family: 'Albert Sans', sans-serif;
-    font-weight: 400;
-    color: var(--secondary-color);
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  color: var(--secondary-color);
 }
 
 /* Boutons */
 .custom-button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-family: 'Albert Sans', sans-serif;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0;
-    transition: all 0.3s ease;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
 }
-
 .custom-button:hover {
-    background-color: var(--accent-color);
+  background-color: var(--hover-color);
+  color: var(--primary-color);
 }
 
 /* Carrousel */
 .carousel-item {
-    transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
 }
 
 .carousel-caption {
-    background-color: rgba(44, 44, 44, 0.7);
-    padding: 1.5rem;
+  background-color: rgba(44, 44, 44, 0.7);
+  padding: 1.5rem;
 }
 
+h1,
+h2,
+h3,
+.title {
+  font-family: "League Gothic", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
 /* Images */
 .gallery-image {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .gallery-image:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(243, 237, 149, 0.2);
+  /* Ombre jaune très subtile */
 }
 
 /* Footer */
 footer {
-    background-color: var(--light-bg);
+  background-color: var(--light-bg);
 }
 
 .social-icon {
-    color: var(--primary-color);
-    transition: color 0.3s ease;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: var(--accent-color);
+  color: var(--hover-color);
+}
+.bg-light-bg {
+  background-color: var(--light-bg);
+}
+
+/* Ajoutez des styles personnalisés si nécessaire */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-item .bg-black {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Overlay plus prononcé */
 }
 
 /* Améliorations spécifiques */
 .menu-section {
-    background-color: var(--light-bg);
-    padding: 4rem 0;
+  background-color: var(--light-bg);
+  padding: 4rem 0;
 }
 
 .about-section-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 /* Classes utilitaires Tailwind modifiées */
 .text-gray-900 {
-    color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .text-gray-600 {
-    color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
 }

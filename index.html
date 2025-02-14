@@ -13,34 +13,42 @@
 
 <body class="bg-white">
     <!-- Navigation -->
-    <nav id="header" class="w-full z-30 top-0 py-3 bg-white shadow-sm">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between px-6">
-            <div class="flex items-center">
-                <a class="brand-title no-underline hover:no-underline" href="index.html">
-                    PANAILLE
-                </a>
-            </div>
-            
-            <div class="flex items-center">
-                <nav class="hidden md:flex">
-                    <ul class="flex items-center space-x-8">
-                        <li><a class="nav-link text-lg" href="index.html">Accueil</a></li>
-                        <li><a class="nav-link text-lg" href="menu.html">La carte</a></li>
-                        <li><a class="nav-link text-lg" href="about.html">À propos</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- Menu mobile -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-500">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+<nav id="header" class="w-full z-30 top-0 py-3 bg-white shadow-sm">
+<div class="w-full container mx-auto flex flex-wrap items-center justify-between px-6">
+    <div class="flex items-center">
+        <a class="no-underline hover:no-underline" href="index.html">
+            <img src="./static/img/logo.jpg" alt="Logo Panaille" class="w-32 md:w-30 lg:w-30 h-auto">
+        </a>
+    </div>
+        
+        <!-- Menu desktop -->
+        <div class="hidden md:flex">
+            <ul class="flex items-center space-x-8">
+                <li><a class="nav-link text-lg" href="index.html">Accueil</a></li>
+                <li><a class="nav-link text-lg" href="menu.html">La carte</a></li>
+                <li><a class="nav-link text-lg" href="about.html">À propos</a></li>
+            </ul>
         </div>
-    </nav>
+
+        <!-- Bouton menu mobile -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-500">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <ul class="px-6 py-4">
+            <li><a class="block nav-link text-lg py-2" href="index.html">Accueil</a></li>
+            <li><a class="block nav-link text-lg py-2" href="menu.html">La carte</a></li>
+            <li><a class="block nav-link text-lg py-2" href="about.html">À propos</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Carrousel -->
     <div class="relative h-[70vh] overflow-hidden">
@@ -124,12 +132,11 @@
         </div>
     </footer>
 
-    <script>
-        // Menu mobile
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.querySelector('nav');
-            menu.classList.toggle('hidden');
-        });
-    </script>
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
