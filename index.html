@@ -1,98 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Panaille - Restaurant Bordeaux</title>
-    <meta name="description" content="Restaurant Panaille à Bordeaux - Une cuisine moderne et créative">
-    
+    <meta
+      name="description"
+      content="Restaurant Panaille à Bordeaux - Une cuisine moderne et créative"
+    />
+
     <!-- Styles -->
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
     <!-- Custom CSS - toujours charger en dernier pour pouvoir surcharger les autres styles -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Component Loader -->
-    
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="bg-white">
-
-
+  <body class="bg-white">
     <!-- Carrousel -->
     <div class="relative h-[70vh] overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="carousel-item active" style="background-image: url(./static/img/banniere-1.PNG); background-size: cover; background-position: center;">
-                <div class="absolute inset-0 bg-black bg-opacity-40">
-                    <div class="container mx-auto h-full flex items-center">
-                        <div class="text-white px-6 md:px-12">
-                            <h1 class="text-5xl md:text-6xl mb-4">PANAILLE</h1>
-                            <p class="text-xl md:text-2xl mb-8">Restaurant - Patio</p>
-                            <a href="https://maps.app.goo.gl/qRWithYViisKLFvXA" class="custom-button inline-block" target="_blank">
-                                Nous trouver
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="absolute inset-0">
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url(./static/img/banniere-1.PNG);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="absolute inset-0 bg-black bg-opacity-40">
+            <div class="container mx-auto h-full flex items-center">
+              <div class="text-white px-6 md:px-12">
+                <h1 class="text-5xl md:text-6xl mb-4">PANAILLE</h1>
+                <p class="text-xl md:text-2xl mb-8">Restaurant - Patio</p>
+                <a
+                  href="https://maps.app.goo.gl/qRWithYViisKLFvXA"
+                  class="custom-button inline-block"
+                  target="_blank"
+                >
+                  Nous trouver
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Notre cuisine -->
     <section class="py-16 bg-light-bg">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl mb-12" data-aos="fade-up">Notre cuisine</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                    <img src="./static/img/image-1.PNG" alt="Plat" class="w-full h-64 object-cover">
-                </div>
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <img src="./static/img/image-2.PNG" alt="Plat" class="w-full h-64 object-cover">
-                </div>
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                    <img src="./static/img/image-3.PNG" alt="Plat" class="w-full h-64 object-cover">
-                </div>
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
-                    <img src="./static/img/image-9.PNG" alt="Plat" class="w-full h-64 object-cover">
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl mb-12" data-aos="fade-up">Notre cuisine</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="gallery-image overflow-hidden rounded-lg shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="./static/img/image-1.PNG"
+              alt="Plat"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div
+            class="gallery-image overflow-hidden rounded-lg shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./static/img/image-2.PNG"
+              alt="Plat"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div
+            class="gallery-image overflow-hidden rounded-lg shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="./static/img/image-3.PNG"
+              alt="Plat"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div
+            class="gallery-image overflow-hidden rounded-lg shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="./static/img/image-9.PNG"
+              alt="Plat"
+              class="w-full h-64 object-cover"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Informations -->
     <section class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl mb-8">Venez nous voir !</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="body-text">
-                    <p class="mb-4">137 rue du tondu<br>33000 Bordeaux</p>
-                    <p class="mb-4">Le restaurant est ouvert du mardi au samedi soir</p>
-                    <a href="https://bookings.zenchef.com/results?rid=369549&pid=1001" class="custom-button inline-block mt-4">
-                        Réserver une table
-                    </a>
-                </div>
-                <div class="body-text">
-                    <p>Une cuisine créative et moderne dans une ambiance conviviale. Notre carte change chaque semaine pour vous proposer le meilleur des produits de saison.</p>
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl mb-8">Venez nous voir !</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="body-text">
+            <p class="mb-4">137 rue du tondu<br />33000 Bordeaux</p>
+            <p class="mb-4">Le restaurant est ouvert du mardi au samedi soir</p>
+            <a
+              href="https://bookings.zenchef.com/results?rid=369549&pid=1001"
+              class="custom-button inline-block mt-4"
+            >
+              Réserver une table
+            </a>
+          </div>
+          <div class="body-text">
+            <p>
+              Une cuisine créative et moderne dans une ambiance conviviale.
+              Notre carte change chaque semaine pour vous proposer le meilleur
+              des produits de saison.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
     </script>
     <script src="components/menuMobile.js"></script>
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
-    
-</body>
+  </body>
 </html>
