@@ -23,6 +23,21 @@ body {
     color: #000;
 }
 
+.logo-container {
+    height: 96px;
+    /* h-24 en pixels */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo-container img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 1023px) {
     #myCarousel .carousel-item img {
         height: auto !important;

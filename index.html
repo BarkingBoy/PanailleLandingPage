@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body class="bg-white">
@@ -72,18 +73,18 @@
     <!-- Notre cuisine -->
     <section class="py-16 bg-light-bg">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl mb-12">Notre cuisine</h2>
+            <h2 class="text-4xl mb-12" data-aos="fade-up">Notre cuisine</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg">
+                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <img src="./static/img/image-1.PNG" alt="Plat" class="w-full h-64 object-cover">
                 </div>
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg">
+                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
                     <img src="./static/img/image-2.PNG" alt="Plat" class="w-full h-64 object-cover">
                 </div>
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg">
+                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
                     <img src="./static/img/image-3.PNG" alt="Plat" class="w-full h-64 object-cover">
                 </div>
-                <div class="gallery-image overflow-hidden rounded-lg shadow-lg">
+                <div class="gallery-image overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
                     <img src="./static/img/image-9.PNG" alt="Plat" class="w-full h-64 object-cover">
                 </div>
             </div>
@@ -138,5 +139,12 @@
         mobileMenu.classList.toggle('hidden');
     });
 </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>
