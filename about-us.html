@@ -4,62 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Arunlal Panja">
-    <title>About</title>
+    <meta name="description" content="À propos du restaurant Panaille à Bordeaux - Notre histoire et notre équipe">
+    <title>À propos - Panaille Restaurant Bordeaux</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- CSS Files -->
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="./css/style.css">
-
+    
+    <!-- Custom CSS - toujours charger en dernier pour pouvoir surcharger les autres styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-white">
-    <!-- Navigation -->
-<nav id="header" class="w-full z-30 top-0 py-3 bg-white shadow-sm">
-<div class="w-full container mx-auto flex flex-wrap items-center justify-between px-6">
-    <div class="flex items-center">
-        <a class="no-underline hover:no-underline" href="index.html">
-            <img src="./static/img/logo.jpg" alt="Logo Panaille" class="w-32 md:w-30 lg:w-30 h-auto">
-        </a>
-    </div>
-        
-        <!-- Menu desktop -->
-        <div class="hidden md:flex">
-            <ul class="flex items-center space-x-8">
-                <li><a class="nav-link text-lg" href="index.html">Accueil</a></li>
-                <li><a class="nav-link text-lg" href="menu.html">La carte</a></li>
-                <li><a class="nav-link text-lg" href="about-us.html">À propos</a></li>
-            </ul>
-        </div>
-        <!-- Bouton menu mobile -->
-        <div class="md:hidden">
-            <button id="mobile-menu-button" class="text-gray-500">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </div>
-    </div>
 
-    <!-- Menu mobile -->
-    <div id="mobile-menu" class="hidden md:hidden">
-        <ul class="px-6 py-4">
-            <li><a class="block nav-link text-lg py-2" href="index.html">Accueil</a></li>
-            <li><a class="block nav-link text-lg py-2" href="menu.html">La carte</a></li>
-            <li><a class="block nav-link text-lg py-2" href="about-us.html">À propos</a></li>
-        </ul>
-    </div>
-</nav>
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
             <div class="container pt-5">
                 <h2 class="fw-bold pb-3">Search here</h2>
@@ -138,29 +100,7 @@
     </div>
 </div>
         
-    <!-- Footer -->
-    <footer class="bg-light-bg py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-2xl mb-4">À propos</h3>
-                    <p class="body-text">Notre carte se renouvelle toutes les semaines, n'hésitez pas à nous contacter ou la consulter sur le site pour en savoir plus !</p>
-                    <a href="tel:06.60.41.87.39"><p class="body-text">06.60.41.87.39</p></a>
-                </div>
-                <div class="md:text-right">
-                    <h3 class="text-2xl mb-4">Suivez-nous</h3>
-                    <div class="flex md:justify-end space-x-4">
-                        <a href="https://www.facebook.com/panaille.bordeaux/" class="social-icon text-2xl">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/panaille_bordeaux/" class="social-icon text-2xl">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     </main>
     <!-- Footer Block Start -->
     <footer id="site-footer">
@@ -172,8 +112,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom JS -->
-    <script src="about.js"></script>
-    <script src="./menuMobile.js"></script>
+    <script src="components/about.js"></script>
+    <script src="components/menuMobile.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+
 
 </body>
 
