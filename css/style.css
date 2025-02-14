@@ -13,6 +13,22 @@
   font-style: normal;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.owl-item.active.center h5,
+.owl-item.active.center span {
+  color: #000;
+}
+
+
+@media screen and (max-width: 1023px) {
+  #myCarousel .carousel-item img {
+    height: auto !important;
+  }
+}
+
 :root {
   --primary-color: #000000;
   /* Noir du logo */
